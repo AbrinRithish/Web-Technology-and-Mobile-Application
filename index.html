@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Your Portfolio</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cabinet+Grotesk:wght@400;600;700&family=Fraunces:wght@500;700&display=swap" rel="stylesheet">
+
+    <!-- Internal CSS (Experiment 1 requirement) -->
+    <style>
+        h1 {
+            font-family: 'Fraunces', serif;
+            font-size: 40px;
+            color: rgb(255, 94, 168);
+        }
+    </style>
+</head>
+
+<!-- Inline CSS (Experiment 1 requirement) -->
+<body style="background: linear-gradient(135deg, black, rgb(25,25,112), rgb(75,0,130)); color:white; text-align:center;">
+
+    <!-- Heading -->
+    <h1>Welcome! Create Your Own Personal Portfolio Website</h1>
+
+    <p class="sub-text">Build your professional website easily and beautifully.</p>
+
+    <!-- Register Button -->
+    <div class="btn-container">
+        <a href="register.html" class="main-btn">Register Now</a>
+    </div>
+
+    <!-- GitHub Hotspot Image -->
+    <h2 class="section-title">Add Your GitHub Profile</h2>
+
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZfLuviePOqQJ1yuhvxr80AsqV91Btr2rqZw&s"
+         usemap="#githubmap"
+         class="github-image">
+
+    <map name="githubmap">
+        <area shape="rect"
+              coords="0,0,500,500"
+              href="https://github.com/"
+              target="_blank"
+              alt="GitHub">
+    </map>
+
+    <p class="info-text">You can add your GitHub too.</p>
+
+    <!-- Location Map at Bottom -->
+    <h2 class="section-title">Your Location</h2>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60062.45093844654!2d77.4150323!3d8.1713051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b04f0dfc0ddc7b7%3A0x809a9e32a95d3ed1!2sNagercoil%2C%20Tamil%20Nadu!5e1!3m2!1sen!2sin!4v1771861432776!5m2!1sen!2sin"
+        width="600"
+        height="450"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        class="map-box">
+    </iframe>
+
+    <p class="info-text">You can add your location too.</p>
+
+</body>
+</html>
