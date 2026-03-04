@@ -1,84 +1,75 @@
 body {
+    font-family: Arial, sans-serif;
     margin: 0;
-    font-family: "Cabinet Grotesk", sans-serif;
-    text-align: center;
-    background: linear-gradient(135deg, black, rgb(25,25,112), rgb(75,0,130));
-    color: white;
+    background-color: #f2f2f2;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
-/* Smooth transition */
-* {
-    transition: all 0.4s ease-in-out;
+.main {
+    flex: 1;
 }
 
-/* Headings */
-h1, .section-title, .form-heading {
-    font-family: "Fraunces", serif;
+.header {
+  background-color: #333;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  position: relative;
+  height: 80px;
+  padding: 10px 20px;
 }
 
-.sub-text {
-    font-size: 18px;
-    color: rgb(200,200,255);
+.header img {
+    width: 150px;  
+    height: auto;   
 }
 
-.section-title {
-    margin-top: 40px;
-    color: rgb(98,242,116);
+.header span {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px;
+    font-weight: bold;
 }
 
-.info-text {
-    color: rgb(255,200,87);
-    margin-bottom: 40px;
+.container {
+    display: flex;
+    min-height: 80vh;
 }
 
-/* Button */
-.main-btn {
-    display: inline-block;
-    padding: 12px 25px;
-    background: linear-gradient(120deg, rgb(255,94,168), rgb(138,122,255));
-    color: white;
-    border-radius: 25px;
+.sidebar {
+    width: 25%;
+    background-color: #e6e6e6;
+    padding: 15px;
+}
+
+.sidebar a {
+    display: block;
+    padding: 8px;
     text-decoration: none;
-    font-weight: 600;
-    margin: 20px;
-}
-
-.main-btn:hover {
-    transform: scale(1.08);
-}
-
-/* GitHub Image */
-.github-image {
-    width: 250px;
-    border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(255,94,168,0.5);
-}
-
-.github-image:hover {
-    transform: scale(1.1);
-}
-
-/* Map */
-.map-box {
-    border-radius: 20px;
-    border: 3px solid rgb(255,200,87);
-    margin-top: 20px;
-}
-
-/* Form */
-.form-box {
-    width: 350px;
-    margin: 40px auto;
-    padding: 20px;
-    background: rgba(255,255,255,0.95);
-    border-radius: 15px;
     color: black;
 }
 
-input, textarea {
-    width: 100%;
-    padding: 8px;
-    margin: 8px 0;
-    border-radius: 8px;
-    border: 1px solid gray;
-}   
+.sidebar a:hover {
+    background-color: #ccc;
+}
+
+.content {
+    width: 75%;
+    padding: 20px;
+}
+
+.footer {
+    background-color: #004aad;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.sidebar,
+.content {
+    min-height: 100%;
+}
